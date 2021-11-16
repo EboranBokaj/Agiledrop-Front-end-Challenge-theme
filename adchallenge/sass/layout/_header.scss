@@ -1,0 +1,75 @@
+header {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: $white;
+  @include flex(row, center, center);
+
+  .region-header {
+    max-width: ($contentWidth);
+    @include flex(row, space-between, center);
+
+    #block-adchallenge-branding {
+      @include flex(row);
+
+      .site-logo {
+        transition: $transitionSpeed;
+        &:hover {
+          opacity: 0.65;
+        }
+      }
+
+      .site-slogan {
+        font-size: 24px;
+        padding-left: 1rem;
+        font-weight: 300;
+      }
+    }
+    .menu--main {
+      width: 100%;
+      .menu {
+        @include flex(row, flex-end);
+        .menu-item > a {
+          padding-left: 1rem;
+          text-transform: uppercase;
+          transition: $transitionSpeed;
+
+          &:hover {
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  header {
+    .region-header {
+      padding-left: $paddingTablet;
+      padding-right: $paddingTablet;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  header {
+    height: 150px;
+    .region-header {
+      @include flex(column, center, center);
+      row-gap: 1rem;
+
+      .site-slogan {
+        display: none;
+      }
+    }
+    #block-adchallenge-main-menu {
+      .menu {
+        @include flex(row, center, center);
+        margin: 0;
+      }
+    }
+  }
+}

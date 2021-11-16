@@ -1,0 +1,33 @@
+footer {
+  .region-footer {
+    nav#block-footer {
+      @include flex();
+      background-color: #0f2123;
+      height: 70px;
+
+      .menu {
+        @include flex(row, center, center);
+        margin: 0;
+
+        .menu-item {
+          padding: 0 1rem;
+          color: $mediumGrey;
+        }
+      }
+    }
+    #block-footercreated {
+      @include flex();
+      background-color: $darkBlue;
+      height: 50px;
+
+      .text-formatted {
+        p {
+          color: #d5d5d5;
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

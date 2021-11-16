@@ -1,0 +1,41 @@
+.layout-container {
+  width: 100%;
+  @include flex(column, center, center);
+  overflow-x: hidden;
+  main {
+    .layout-content {
+      .region {
+        .block {
+          // padding on all sections in home page
+          @include flex(row, center, center);
+          padding: $paddingContentTopBottom 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+.region {
+  width: 100%;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .layout-container {
+    main {
+      .layout-content {
+        .region {
+          .block {
+            padding: $paddingContentTopBottom 0;
+          }
+        }
+      }
+    }
+  }
+}

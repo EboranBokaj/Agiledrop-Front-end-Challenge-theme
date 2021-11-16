@@ -1,0 +1,59 @@
+.views-row > article {
+  width: 310px;
+  h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    a {
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+  .node__content {
+    padding-top: 0.5rem;
+
+    .createdDate {
+      font-size: 12px;
+      line-height: 14px;
+      text-transform: uppercase;
+      color: $mediumGrey;
+    }
+    .image-style-article-teaser {
+      width: 310px;
+      height: 203px;
+      padding: 1rem 0;
+    }
+    .node__links {
+      padding-top: 2rem;
+      .node-readmore {
+        padding-left: 0;
+        a {
+          &:hover {
+            color: $blue;
+          }
+        }
+        &:after {
+          content: " \276F";
+          font-weight: bold;
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+.views-row:nth-child(2n + 2)
+  article
+  .node__content
+  .node__links
+  .node-readmore {
+  a {
+    &:hover {
+      color: $red;
+    }
+  }
+  &:after {
+    color: $red;
+  }
+}

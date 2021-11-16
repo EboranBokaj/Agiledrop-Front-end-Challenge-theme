@@ -1,0 +1,18 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: $black;
+}
+
+// configuration for main menu
+.current {
+  color: $blue;
+  &:hover {
+    color: $red;
+  }
+}
