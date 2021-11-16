@@ -7,7 +7,7 @@
     .content-left {
       height: 100%;
       @include flex(column, center, flex-start);
-      gap: 3rem;
+      gap: 5rem;
       .text-formatted {
         max-width: 50ch;
       }

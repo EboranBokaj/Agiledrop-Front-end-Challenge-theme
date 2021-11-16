@@ -476,12 +476,19 @@ header .region-header .menu--main .menu .menu-item > a:hover {
   margin-top: 7rem;
 }
 
+#block-adchallenge-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 #block-adchallenge-content > h2 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 36px;
   line-height: 42px;
   position: relative;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 #block-adchallenge-content > h2::after {
@@ -490,12 +497,16 @@ header .region-header .menu--main .menu .menu-item > a:hover {
   left: 0;
   top: 150%;
   width: 100px;
-  border: 3px solid #0097a7;
+  border: 2px solid #0097a7;
 }
 
 @media (max-width: 1024px) {
   .views-element-container {
     max-width: 650px !important;
+  }
+  #block-adchallenge-content {
+    max-width: 650px;
+    margin: 0 auto;
   }
   .view-content {
     -ms-grid-columns: auto auto !important;
@@ -510,6 +521,10 @@ header .region-header .menu--main .menu .menu-item > a:hover {
 }
 
 @media (max-width: 670px) {
+  #block-adchallenge-content {
+    max-width: 310px;
+    margin: 0 auto;
+  }
   .view-content {
     -ms-grid-columns: auto !important;
     grid-template-columns: auto !important;
@@ -576,7 +591,7 @@ header .region-header .menu--main .menu .menu-item > a:hover {
   left: 0;
   top: 150%;
   width: 100px;
-  border: 3px solid #0097a7;
+  border: 2px solid #0097a7;
 }
 
 @media (max-width: 1024px) {
@@ -649,7 +664,7 @@ header .region-header .menu--main .menu .menu-item > a:hover {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 5rem;
 }
 
 #block-about-me #challenge-about-me .content-left .text-formatted {
@@ -699,7 +714,7 @@ header .region-header .menu--main .menu .menu-item > a:hover {
   left: 0;
   top: 150%;
   width: 100px;
-  border: 3px solid #0097a7;
+  border: 2px solid #0097a7;
 }
 
 @media (max-width: 1024px) {
